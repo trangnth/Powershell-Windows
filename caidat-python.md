@@ -3,10 +3,11 @@
 Cài đặt và sử dụng python 3 bằng dòng lệnh trên windows 10
 
 1. [Cài đặt](#install)
-2. []
+2. [Thực thi file](#shebang)
 
 
-## Cài đặt
+<a name="install"></a>
+## 1. Cài đặt
 
 ### Bước 1: Mở và cấu hình PowerShell
 
@@ -44,3 +45,29 @@ Chúng giữ các cài đặt tập trung một chỗ và có thể duy trì t�
 
 Chocolatey là một trình quản lý gói bằng dòng lệnh được xây dựng cho windows, nó tương tự như `apt-get` trong Linux. Có sẵn trong các phiên bản open-source, `Chocolatey` sẽ giúp bạn cài đặt nhanh chóng các ứng dụng và tool và sự dụng nó để tải xuống những gì cần thiết cho development environment của chúng ta.
 
+
+[updating...]
+
+
+<a name="shebang"></a>
+## 2. Thực thi file
+### Shebang Lines
+
+Để sử dụng Shebang trên windows thì hãy đảm bảo file của bạn đã có Shebang line. Ví dụ tôi có file `run.py` thêm dòng sau vào đầu file để chỉ đường dẫn tới nơi thực thi:
+
+	#!C:\Python27\python.exe
+
+### Executing scripts without the Python launcher: 
+Vào command line với quyền admin chạy:
+
+```sh
+assoc .py=Python.File
+ftype Python.File=C:\Python27\python.exe "%1" %*
+```
+
+Giờ tôi có thể chạy file bằng lệnh `run` hoặc `.\run` trên command line thay vì `python run.py`. Trên Powershell thì chỉ dùng được `.\run` hoặc `./run` 
+
+[Xem thêm](https://blog.michaelckennedy.net/2014/12/04/better-python-integration-in-windows-shebangs-and-version-selectors/)
+
+
+"C:\Python27\python.exe" "%1" %*

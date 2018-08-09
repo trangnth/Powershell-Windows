@@ -13,6 +13,15 @@ Di chuyển sang disk khác, ví dụ sang ổ D:
 
 Quay lại disk vừa di chuyển đi thì sẽ về thư mục cuối cùng khi bạn rời đi. Ví dụ đang ở `C:\User` di chuyển sang ổ D thì vị trí sẽ là `D:` và di chuyển lại ổ `C:` thì vị trí sẽ là `C:\User`
 
+Copy file:
+
+	copy <file-src> <file-dest>
+
+Xóa file:
+
+	rm <file name>
+	
+
 ### Với lệnh dir
 
 Liệt kê các file và thư mục con có trong thư mục hiện tại:
