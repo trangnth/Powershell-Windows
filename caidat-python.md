@@ -1,9 +1,10 @@
-# Python 3 on windows
+﻿# Python 3 on windows
 
 Cài đặt và sử dụng python 3 bằng dòng lệnh trên windows 10
 
 1. [Cài đặt](#install)
 2. [Thực thi file](#shebang)
+3. [Ipython](#ipython)
 
 
 <a name="install"></a>
@@ -70,4 +71,14 @@ Giờ tôi có thể chạy file bằng lệnh `run` hoặc `.\run` trên comman
 [Xem thêm](https://blog.michaelckennedy.net/2014/12/04/better-python-integration-in-windows-shebangs-and-version-selectors/)
 
 
-"C:\Python27\python.exe" "%1" %*
+<a name="ipython"></a>
+## 3. ipython
+
+Xem lại lịch sử các lệnh gõ:
+
+	%history -g
+
+Xuất chúng ra file
+
+	%history -g -f <file name>
+
