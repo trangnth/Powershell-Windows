@@ -1,11 +1,6 @@
 ---
-layout: post
-title: Ghi chép PowerShell
-author: trangnth
-
-"editor.insertSpaces": true,
-"editor.tabSize": 4,
-"editor.detectIndentation": true
+Title: Ghi chép PowerShell
+Author: trangnth
 ---
 
 
